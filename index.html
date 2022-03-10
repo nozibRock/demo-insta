@@ -33,7 +33,7 @@
     <body>
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
-                <a class="navbar-brand" href="#">Insta-Sohor</a>
+                <a class="navbar-brand" href="index.html">Insta-Sohor</a>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -76,10 +76,87 @@
             <div id="reported">
                 <h1>Reported posts</h1>
             </div>
+
+            <!-- faq start -->
+            <section class="container py-5">
+                <h1 class="text-center fw-bold mb-5 faqText">
+                    Frequently Asked And Questions
+                </h1>
+                <div class="row row-cols-1 row-cols-md-2 d-flex align-items-center">
+                    <div class="col">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item mb-2">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        How Does JavaScript works?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        JavaScript is a client-side scripting language.The term .client-side scripting language means that it runs at the client-side. inside the web-browsers, but one
+                                        important thing to remember is that client's web-browser also needs to support the JavaScript or it must be JavaScript
+                                        enabled.The Document Object Model and how the web browser works. The web browser loads a web page, parses the HTML, and
+                                        constructs a Document Object Model DOM from the contents. The DOM gives your JavaScript code a live view of the web
+                                        page.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-2 border-top">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        What does JavaScript Event loop do?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        There is a Javascript engine and an environment for running Javascript inside Browser. Heap and Call Stack are
+                                        two elements of the Javascript engine. Web APIs and Callback Queue are two of the engine's assistants. An unstructured
+                                        memory block is referred to as a heap. Memory allocation for our code takes place here. We don't have to worry about
+                                        heaps as programmers. Call Stack can be thought of as a kitchen where all of our code is executed or cooked. When we try
+                                        to run a piece of code, it first goes to the call stack before being executed. It operates in a LIFO fashion. It's
+                                        called "Last In, First Out" for a reason. Web API acts as a helper for JS engines.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-2 border-top">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        What is the difference between local storage and session storage?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Session Storage and Local Storage are more similar than they are distinct. Local Storage and Session Storage should be
+                                        supported by most recent browsers. They're utilized in the browser to save data. They can only be accessed from the
+                                        client side (web servers are unable to access them directly). They also don't support SSL because they're a front-end
+                                        tool. The amount of data that can be saved in Local and Session Storage varies depending on the browser. Many popular
+                                        publications claim a 5MB limit for local storage and a 5-10MB limit for remote storage (to be safe, check with each
+                                        browser).
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col order-first order-md-last mb-2 mb-md-0">
+                        <img src="images/faq.png" class="img-fluid img-thumbnail rounded" />
+                    </div>
+                </div>
+            </section>
+            <!-- faq end -->
         </main>
         <footer></footer>
 
         <!-- add javascript  file  -->
         <script src="./js/app.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
     </body>
 </html>
