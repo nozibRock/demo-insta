@@ -86,7 +86,9 @@ const createPost = (post) => {
               <div class="post__footer">
                 <div class="post__buttons">
                   <button class="post__button" onclick="addToLiked(${post.id})">
-                  <i class="fa-solid fa-heart ${isLiked(post.id) && "text-danger"}"></i>
+                  <i class="fa-solid fa-heart ${
+                    isLiked(post.id) && "text-danger"
+                  }"></i>
                     
                   </button>
                   <button class="post__button">
@@ -97,13 +99,15 @@ const createPost = (post) => {
                   <div class="post__indicators"></div>
 
                   <button class="post__button post__button--align-right" onclick="reportPost(${
-                      post.id
+                    post.id
                   })">
                     <i class="fa-solid fa-ban"></i>
                   </button>
                 </div>
 
-                <div class="post__content">${displayContent(post.description)}</div>
+                <div class="post__content">${displayContent(
+                  post.description
+                )}</div>
 
                 <div class="post__infos">
                   <div class="post__likes">
@@ -121,9 +125,9 @@ const createPost = (post) => {
                   <div class="post__description">
                     <small>
                       <a class="post__name--underline" href="#">
-                          ${post.comments?.user}
+                          ${post.comments[0]?.user}
                       </a>
-                      ${post.comments?.text}
+                      ${post.comments[0]?.text}
                     </small>
                   </div>
                   <span class="post__date-time">30 minutes ago</span>
