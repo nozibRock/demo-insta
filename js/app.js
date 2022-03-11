@@ -1,4 +1,4 @@
-let posts = [];
+let posts = [ ];
 
 const likedPostsId = [];
 const reportedPostsId = [];
@@ -15,6 +15,7 @@ const isLiked = (id) => {
   return likedPostsId?.length && !!likedPostsId.includes(id);
 };
 
+// like posts solved
 const addToLiked = (id) => {
   likedPostsId.push(id);
   showPosts(posts);
@@ -27,6 +28,8 @@ const reportPost = (id) => {
   );
   showPosts(remainingPosts);
 };
+
+// description read more solved
 
 const displayContent = (text) => {
   return text.length < 30
@@ -58,6 +61,7 @@ const switchTab = (id) => {
 };
 
 const createPost = (post) => {
+  // profile picture solved
   const image = post.image;
   const userDp = post.userImage;
   const div = document.createElement("article");
